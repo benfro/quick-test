@@ -21,5 +21,6 @@ class MapBuilderTest {
       } catch (IOException e) {
          e.printStackTrace();
       }
+
    }
 }
