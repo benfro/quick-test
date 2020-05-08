@@ -10,7 +10,7 @@ class MapBuilderTest {
    @Test
    void testMD5Contect() {
       MapBuilder instance = new MapBuilder();
-      System.out.println(instance.md5Content("/Users/benfro", "Downloads", "bdsmlr-35385-rjCK844p3C-og.jpg"));
+      System.out.println(instance.md5Content("/Users/benfro", "Downloads", "hhh.jpg"));
    }
 
    @Test
