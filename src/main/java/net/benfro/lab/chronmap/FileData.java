@@ -1,4 +1,4 @@
-package net.benfro.lab.chonmap;
+package net.benfro.lab.chronmap;
 
 public interface FileData {
    String getPath();

@@ -1,4 +1,4 @@
-package net.benfro.lab.chonmap;
+package net.benfro.lab.chronmap;
 
 import org.junit.jupiter.api.Test;
 

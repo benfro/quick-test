@@ -1,4 +1,4 @@
-package net.benfro.lab.chonmap;
+package net.benfro.lab.chronmap;
 
 import com.google.common.collect.Sets;
 import net.openhft.chronicle.map.ChronicleMap;
