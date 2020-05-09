@@ -1,20 +1,27 @@
 package net.benfro.lab.rxjava;
 
+import io.reactivex.rxjava3.annotations.NonNull;
 import io.reactivex.rxjava3.core.Flowable;
+import io.reactivex.rxjava3.core.Single;
 import io.reactivex.rxjava3.schedulers.Schedulers;
 import org.junit.jupiter.api.Test;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * https://github.com/ReactiveX/RxJava
  */
-class RxJavaStuffTest {
+class WorkBenchTest {
 
    @Test
    void nonParallell() {
-      Flowable.range(1, 10)
+      @NonNull Single<List<Integer>> collect = Flowable.range(1, 10)
               .observeOn(Schedulers.computation())
               .map(v -> v * v)
-              .blockingSubscribe(System.out::println);
+              //.blockingSubscribe(System.out::println);
+              .collect(Collectors.toList());
+      collect.blockingGet().forEach(s -> System.out.println(s));
    }
 
    @Test
