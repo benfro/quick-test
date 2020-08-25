@@ -34,6 +34,8 @@ dependencies {
     compile group: 'io.projectreactor', name: 'reactor-core', version: '3.3.5.RELEASE'
     compile group: 'com.google.inject', name: 'guice', version: '4.2.2'
     implementation "io.reactivex.rxjava3:rxjava:3.0.3"
+    testCompile group: 'org.mockito', name: 'mockito-inline', version: '3.5.5'
+
 }
 
 test {
