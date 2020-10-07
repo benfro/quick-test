@@ -34,6 +34,9 @@ dependencies {
     compile group: 'io.projectreactor', name: 'reactor-core', version: '3.3.5.RELEASE'
     compile group: 'com.google.inject', name: 'guice', version: '4.2.2'
     implementation "io.reactivex.rxjava3:rxjava:3.0.3"
+    // https://mvnrepository.com/artifact/org.knowm.xchart/xchart
+    compile group: 'org.knowm.xchart', name: 'xchart', version: '3.6.3'
+
 }
 
 test {
