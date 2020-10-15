@@ -15,7 +15,7 @@ plugins {
 group 'net.benfro'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 14
 
 repositories {
     mavenLocal()
@@ -32,8 +32,8 @@ dependencies {
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.6.2'
     compile group: 'commons-codec', name: 'commons-codec', version: '1.14'
     compile group: 'io.projectreactor', name: 'reactor-core', version: '3.3.5.RELEASE'
-    compile group: 'com.google.inject', name: 'guice', version: '4.2.2'
-    implementation "io.reactivex.rxjava3:rxjava:3.0.3"
+    //compile group: 'com.google.inject', name: 'guice', version: '4.2.2'
+    implementation "io.reactivex.rxjava3:rxjava:3.0.7"
     testCompile group: 'org.mockito', name: 'mockito-inline', version: '3.5.5'
 
 }

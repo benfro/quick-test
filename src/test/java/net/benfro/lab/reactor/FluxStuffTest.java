@@ -8,6 +8,7 @@ import reactor.core.publisher.Flux;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
+import java.util.stream.Collectors;
 
 class FluxStuffTest {
 
@@ -60,7 +61,7 @@ class FluxStuffTest {
 //         }
 //      });
 
-      List<String> giveMe = Lists.newArrayList();
+      final List<String> giveMe = Lists.newArrayList();
       Flux<String> flux2 = Flux.generate(
               AtomicLong::new,
               (state, sink) -> {
@@ -75,7 +76,8 @@ class FluxStuffTest {
       } catch (InterruptedException e) {
          e.printStackTrace();
       }
-      giveMe.forEach(s -> System.out.println(s));
+      flux2.collect(Collectors.toList()).block().forEach(s -> System.out.println(s));
+      //giveMe.forEach(s -> System.out.println(s));
 
    }
 }
