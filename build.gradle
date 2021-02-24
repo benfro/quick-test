@@ -8,7 +8,7 @@ buildscript {
 
 plugins {
     id 'java'
-    id 'maven'
+    //id 'maven'
     id 'idea'
 }
 
@@ -38,9 +38,6 @@ dependencies {
     implementation group: 'com.deliveredtechnologies', name: 'rulebook-core', version: '0.11'
     implementation group: 'cglib', name: 'cglib', version: '3.3.0'
     implementation 'io.github.kostaskougios:cloning:1.10.3'
-
-
-
 }
 
 test {
