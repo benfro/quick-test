@@ -1,10 +1,12 @@
 package net.benfro.lab.rxjava.threads;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 /**
  * https://stackoverflow.com/questions/60343190/how-can-i-replace-inter-thread-communication-using-volatile-variables-with-rxjav
  */
+@Disabled
 class MeasurerTest {
 
    @Test

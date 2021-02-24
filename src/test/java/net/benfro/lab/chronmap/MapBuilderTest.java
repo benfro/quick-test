@@ -1,10 +1,12 @@
 package net.benfro.lab.chronmap;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.nio.file.Paths;
 
+@Disabled
 class MapBuilderTest {
 
    @Test
