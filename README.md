@@ -1,2 +1,2 @@
-# gradle-template
-Template quick start project for gradle
+# Quick test repo
+Trying out libs real quick
