@@ -21,8 +21,7 @@ group = 'net.benfro.lab'
 version = '1.0-SNAPSHOT'
 
 dependencies {
-    implementation 'com.google.guava:guava:32.0.0-jre'
-    implementation 'commons-io:commons-io:2.14.0'
+
     implementation 'com.google.inject:guice:7.0.0'
     implementation 'org.apache.commons:commons-lang3:3.9'
     implementation 'net.openhft:chronicle-map:3.19.4'

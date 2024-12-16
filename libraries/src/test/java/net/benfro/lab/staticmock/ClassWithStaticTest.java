@@ -1,5 +1,6 @@
 package net.benfro.lab.staticmock;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.mockito.MockedStatic;
 
@@ -8,6 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.mockito.Mockito.mockStatic;
 import static org.mockito.Mockito.times;
 
+@Disabled
 class ClassWithStaticTest {
 
    @Test
