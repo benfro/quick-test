@@ -1,4 +1,4 @@
-package net.benfro.lab.algo;
+package net.benfro.lab.algorithms;
 
 import com.google.common.collect.Lists;
 import org.junit.jupiter.api.Test;
